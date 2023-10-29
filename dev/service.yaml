@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: chat-app-service
+spec:
+  selector:
+    app: chat-app
+  type: LoadBalancer  # This makes your service accessible through an external IP in Minikube
+  ports:
+    - protocol: TCP
+      port: 80  # The port that is exposed outside the cluster
+      targetPort: 8080  # The port on which your app is running, replace if your app uses a different port
