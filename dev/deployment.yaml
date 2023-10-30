@@ -19,3 +19,5 @@ spec:
         image: moukthikavuyyuru/chat-app:latest  # replace with your Docker Hub username and image name
         ports:
         - containerPort: 8080  # replace with the port your app runs on
+      imagePullSecrets:
+      - name: myregistrykey
