@@ -10,7 +10,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/moukthika-vuyyuru/Chat-Application.git
+    repoURL: https://github.com/moukthika-vuyyuru/argocd-app-config.git
     targetRevision: HEAD
     path: dev
 
