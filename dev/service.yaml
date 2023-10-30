@@ -5,7 +5,6 @@ metadata:
 spec:
   selector:
     app: chat-app
-  type: LoadBalancer  # This makes your service accessible through an external IP in Minikube
   ports:
     - protocol: TCP
       port: 80  # The port that is exposed outside the cluster
